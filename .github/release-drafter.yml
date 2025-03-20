@@ -15,31 +15,31 @@ categories:
     labels: ["test", "ci", "build"]
 autolabeler:
   - label: "feat"
-    title: ["/feat/i"]
+    title: ["/^feat/i", "/^. feat/i"]
     branch: ["/^feat/i"]
   - label: "fix"
-    title: ["/fix/i"]
+    title: ["/^fix/i", "/^. fix/i"]
     branch: ["/^fix/i"]
   - label: "chore"
-    title: ["/chore/i"]
+    title: ["/^chore/i", "/^. chore/i"]
     branch: ["/^chore/i"]
   - label: "docs"
-    title: ["/docs/i"]
+    title: ["/^docs/i", "/^. docs/i"]
     branch: ["/^docs/i"]
   - label: "refactor"
-    title: ["/refactor/i"]
+    title: ["/^refactor/i", "/^. refactor/i"]
     branch: ["/^refactor/i"]
   - label: "perf"
-    title: ["/perf/i"]
+    title: ["/^perf/i", "/^. perf/i"]
     branch: ["/^perf/i"]
   - label: "test"
-    title: ["/test/i"]
+    title: ["/^test/i", "/^. test/i"]
     branch: ["/^test/i"]
   - label: "ci"
-    title: ["/ci/i"]
+    title: ["/^ci/i", "/^. ci/i"]
     branch: ["/^ci/i"]
   - label: "build"
-    title: ["/build/i"]
+    title: ["/^build/i", "/^. build/i"]
     branch: ["/^build/i"]
 template: |
   ## Changes
