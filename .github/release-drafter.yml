@@ -2,6 +2,30 @@ name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&'
+categories:
+  - title: '🚀 Features'
+    labels: 
+      - 'feat'
+  - title: '🐛 Bug Fixes'
+    labels: 
+      - 'fix'
+  - title: '🛠 Maintenance'
+    labels: 
+      - 'chore' 
+      - 'refactor' 
+      - 'perf'
+  - title: '📝 Documentation'
+    labels: 
+      - 'docs'
+  - title: '⚡ Other Changes'
+    labels: 
+      - 'test'
+      - 'ci'
+      - 'build'
+template: |
+  ## Changes
+
+  $CHANGES
 autolabeler:
   - label: 'feat'
     title: 
@@ -57,27 +81,3 @@ autolabeler:
       - '/^. build/i'
     branch: 
       - '/^build/i'
-categories:
-  - title: '🚀 Features'
-    labels: 
-      - 'feat'
-  - title: '🐛 Bug Fixes'
-    labels: 
-      - 'fix'
-  - title: '🛠 Maintenance'
-    labels: 
-      - 'chore' 
-      - 'refactor' 
-      - 'perf'
-  - title: '📝 Documentation'
-    labels: 
-      - 'docs'
-  - title: '⚡ Other Changes'
-    labels: 
-      - 'test'
-      - 'ci'
-      - 'build'
-template: |
-  ## Changes
-
-  $CHANGES
