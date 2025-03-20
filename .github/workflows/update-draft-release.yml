@@ -19,6 +19,8 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
       - name: Extract version from package.json
         id: extract_version
         run: |
