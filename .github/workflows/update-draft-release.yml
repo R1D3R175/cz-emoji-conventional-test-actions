@@ -19,6 +19,13 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: release-drafter/release-drafter@v6
+      - name: Extract version from package.json
+        id: extract_version
+        run: |
+          echo "EXTRACTED_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
+      - name: Run release drafter
+        uses: release-drafter/release-drafter@v6
+        with:
+          version: ${{ steps.extract_version.outputs.EXTRACTED_VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
