@@ -8,6 +8,8 @@ import wrap from "word-wrap";
 import { gitmojiByType, types } from "./constant";
 
 // this is a comment because I want to test release drafter config.
+// another comment because testtttting
+// idk another commit
 const config = configLoader.load() || {};
 
 const customTypesPath = path.resolve(__dirname, "../../../czCustomTypes.cjs");
