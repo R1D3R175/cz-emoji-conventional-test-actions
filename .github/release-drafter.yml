@@ -12,7 +12,7 @@ categories:
   - title: "📝 Documentation"
     labels: ["docs"]
   - title: "⚡ Other Changes"
-    labels: ["test", "ci"]
+    labels: ["test", "ci", "build"]
 autolabeler:
   - label: "feat"
     title: ["/feat/i"]
@@ -38,6 +38,9 @@ autolabeler:
   - label: "ci"
     title: ["/ci/i"]
     branch: ["/^ci/i"]
+  - label: "build"
+    title: ["/build/i"]
+    branch: ["/^build/i"]
 template: |
   ## Changes
 
